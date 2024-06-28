@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Carreira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha sua Carreira</h1>
+        <form id="career-form">
+            <div class="form-step" id="step-1">
+                <label for="interest">Qual é o seu principal interesse?</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Selecione</option>
+                    <option value="technology">Tecnologia</option>
+                    <option value="arts">Artes</option>
+                    <option value="science">Ciência</option>
+                </select>
+            </div>
+
+            <div class="form-step" id="step-2" style="display: none;">
+                <label for="subinterest">Qual é a área específica de interesse?</label>
+                <select id="subinterest" name="subinterest" required>
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+
+            <div class="form-step" id="step-3" style="display: none;">
+                <label for="career">Aqui está uma carreira recomendada para você:</label>
+                <p id="career-recommendation"></p>
+            </div>
+
+            <button type="button" id="next-button">Próximo</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
